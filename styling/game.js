@@ -48,7 +48,7 @@ guessButton.addEventListener('click', () => {
   
   // Set the correct disabled state for the buttons
   guessButton.setAttribute('disabled', true)
-  nextRoundButton.removeAttribute('disabled');
+  nextRoundButton.removeAttribute('disabled', false);
 });
 
 nextRoundButton.addEventListener('click', () => {
@@ -58,7 +58,7 @@ nextRoundButton.addEventListener('click', () => {
   roundNumberDisplay.innerText = currentRoundNumber;
 
   // Set the correct disabled state for the buttons
-  nextRoundButton.setAttribute('disabled', true);
+  nextRoundButton.setAttribute('disabled', false);
   guessButton.removeAttribute('disabled');
 
   // Reset the guess input box and the target number display:
